@@ -1,0 +1,41 @@
+İzmir Gophers
+Kubernetes ile Go Uygulamaları Host Etmek
+Tags: kubernetes,k8s,golang
+
+Oğuzhan YILMAZ
+Founder at MaestroPanel, CTO at MasomoGames, Co-Founder at İzmir Gophers
+oguzhan@maestropanel.com
+https://blog.oguzhan.info
+@c1982
+
+* Gereksinimler
+.link https://kubernetes.io/docs/reference/kubectl/kubectl/ kubectl (kubernetes command-line tool)
+.link https://github.com/kubernetes/kops kops (Kubernetes Operations)
+.link https://kubernetes.io/docs/setup/minikube/ minikube (Kubernetes local environment)
+
+* Uygulama
+.code app.go
+
+* Dockerfile
+.code Dockerfile
+
+* Registry
+.link https://docs.docker.com/registry/ Docker Trusted Registry (DTR)
+.link https://github.com/uber/kraken Kraken - P2P Docker Registry
+.link https://docs.aws.amazon.com/en_us/AmazonECR/latest/userguide/ECR_GetStarted.html Elastic Container Registry (ECR)
+.link https://goharbor.io/ Harbor Cloud Native Registry
+
+* Kubernetes
+
+* Mimari
+buraya mimari gelecek
+
+* Deployment
+.code k8n/deployment.yaml
+
+* Service
+.code K8n/service.yaml
+
+* Update 
+
+* Ingress
