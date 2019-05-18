@@ -3,7 +3,6 @@ Kubernetes ile Go Uygulamaları Host Etmek
 Tags: kubernetes,k8s,golang
 
 Oğuzhan YILMAZ
-Founder at MaestroPanel, CTO at MasomoGames, Co-Founder at İzmir Gophers
 oguzhan@maestropanel.com
 https://blog.oguzhan.info
 @c1982
@@ -28,7 +27,8 @@ https://blog.oguzhan.info
 * Kubernetes
 
 * Mimari
-buraya mimari gelecek
+
+.image k8s.png _ 800
 
 * Deployment
 .code k8s/deployment.yaml
@@ -49,3 +49,8 @@ buraya mimari gelecek
     kubectl rollout undo deployments/kubernetes-bootcamp
 
 * Ingress
+
+
+* Additional
+
+https://github.com/kubernetes/sample-controller

@@ -1,17 +1,14 @@
 package main
 
-import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
-)
+import "github.com/gin-gonic/gin"
 
 func main() {
 
-	g := gin.New()
-	g.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello Mother Gophers!")
+	r := gin.New()
+
+	r.GET("/", func(c *gin.Context) {
+		c.String("hello gophers!")
 	})
 
-	g.Run(":8080")
+	r.Run(":8080")
 }
