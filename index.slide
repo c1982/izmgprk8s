@@ -42,7 +42,7 @@ https://blog.oguzhan.info
 
 * Update 
 
-    kubectl set image deployments/app app=app:v2
+    kubectl set image deployments/app app=c1982/igophers:v2.0.0
 
 * Rollback
 
