@@ -34,7 +34,7 @@ https://blog.oguzhan.info
 .code k8s/deployment.yaml
 
 * Service
-.code K8s/service.yaml
+.code k8s/service.yaml
 
 * Scaling
 
