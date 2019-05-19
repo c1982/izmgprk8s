@@ -9,13 +9,13 @@ RUN mkdir -p /go/src \
 ENV PATH=$GOPATH/bin:$PATH
 ENV GO111MODULE=on
 
-ADD . /go/src/izmgprk8s/app
+ADD . /go/src/izmgprk8s
 
-WORKDIR /go/src/izmgprk8s/app
+WORKDIR /go/src/izmgprk8s
 RUN go mod vendor
 RUN go build -o app
 
 FROM alpine:3.7 as app
 
-COPY --from=builder /go/src/izmgprk8s/app/app /usr/local/bin
+COPY --from=builder /go/src/izmgprk8s/app /usr/local/bin
 CMD /usr/local/bin/app

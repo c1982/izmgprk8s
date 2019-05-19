@@ -1,14 +1,19 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"os"
+
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 
-	r := gin.New()
+	host, _ := os.Hostname()
 
-	r.GET("/", func(c *gin.Context) {
-		c.String("hello gophers!")
+	g := gin.New()
+	g.GET("/", func(c *gin.Context) {
+		c.String(200, "hello gophers! Host: "+host)
 	})
 
-	r.Run(":8080")
+	g.Run(":8080")
 }

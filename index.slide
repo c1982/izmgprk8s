@@ -46,11 +46,9 @@ https://blog.oguzhan.info
 
 * Rollback
 
-    kubectl rollout undo deployments/kubernetes-bootcamp
-
-* Ingress
-
+    kubectl rollout undo deployments/app
 
 * Additional
 
-https://github.com/kubernetes/sample-controller
+.link https://github.com/kubernetes/sample-controller
+.link https://github.com/mrbobbytables/k8s-intro-tutorials
